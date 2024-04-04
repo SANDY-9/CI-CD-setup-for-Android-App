@@ -20,8 +20,9 @@ jobs:
           java-version: 17  
 
       - name: Run ktlint             # Lint 실행
-        uses: ScaCap/action-ktlint@v1.8.1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+            cd MyApp
+            chmod +x ./gradlew    
+            ./gradlew ktlintCheck
         
 
