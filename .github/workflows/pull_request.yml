@@ -19,17 +19,9 @@ jobs:
           distribution: 'corretto'
           java-version: 17  
 
-      - name: Run Lint             # Lint 실행
-        run: |
-          cd MyApp
-          chmod +x ./gradlew    
-          ./gradlew lintDebug
-        
-      - name: Upload html test report
-        uses: actions/upload-artifact@v3    # CI 서버에 업로드되어 다운로드 가능한 상태로 변경
+      - name: Run ktlint             # Lint 실행
+        uses: ScaCap/action-ktlint@v1.8.1
         with:
-          name: index.html
-          path: MyApp/app/build/reports/lint-results-debug.html
-
+          github_token: ${{ secrets.GITHUB_TOKEN }}
         
 
