@@ -16,6 +16,7 @@ jobs:
       - name: Run Lint             # Lint 실행
         run: |
           cd MyApp    # gradlew파일이 MyApp 디렉토리 안에 있기 때문에 실행하기 위해 먼저 해당 위치로 이동하는 명령이 필요하다.
+          chmod +x gradlew
           ./gradlew lintDebug
         
       - name: Upload html test report
