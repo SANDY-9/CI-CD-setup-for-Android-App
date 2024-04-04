@@ -53,6 +53,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             imageVector = Icons.Filled.Favorite,
             contentDescription = null
         )
+        Text(
+            text = ""
+        )
     }
 }
 
