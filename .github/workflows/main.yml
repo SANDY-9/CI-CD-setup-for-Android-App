@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code    # 코드를 CI 서버에 체크아웃(푸쉬)
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Run Lint             # Lint 실행
         run: ./gradle lintDebug
