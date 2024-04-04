@@ -19,6 +19,9 @@ jobs:
           
       - name: Run ktlint
         uses: ScaCap/action-ktlint@v1.8.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
           
           
     
