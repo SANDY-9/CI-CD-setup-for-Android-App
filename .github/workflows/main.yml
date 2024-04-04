@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v3    # CI 서버에 업로드되어 다운로드 가능한 상태로 변경
         with:
           name: index.html
-          path: app/build/reports/lint-results-debug.html
+          path: MyApp/app/build/reports/lint-results-debug.html
 
         
 
