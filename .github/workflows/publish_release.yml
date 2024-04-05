@@ -1,4 +1,4 @@
-name: Firebase_App_Distribution_CI
+name: Firebase_App_Distribution_CD
 
 on:
   push:
