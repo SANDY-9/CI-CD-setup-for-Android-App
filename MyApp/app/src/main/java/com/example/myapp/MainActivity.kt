@@ -52,7 +52,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         Icon(
             modifier = modifier.size(100.dp),
             imageVector = Icons.Filled.Favorite,
-            tint = Color.Magenta,
+            tint = Color.Blue,
             contentDescription = null
         )
         Text(text = "")
