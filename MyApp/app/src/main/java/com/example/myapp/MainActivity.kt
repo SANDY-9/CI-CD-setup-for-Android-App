@@ -16,6 +16,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.myapp.ui.theme.MyAppTheme
@@ -45,12 +46,13 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Hello $name!",
+            text = "Hello $name!!!",
             modifier = modifier
         )
         Icon(
             modifier = modifier.size(100.dp),
             imageVector = Icons.Filled.Favorite,
+            tint = Color.Magenta,
             contentDescription = null
         )
         Text(text = "")
